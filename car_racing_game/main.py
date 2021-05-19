@@ -19,13 +19,13 @@ display_height=600
 gamedisplays=pygame.display.set_mode((display_width,display_height))
 pygame.display.set_caption('The ASPRA 13 Racing Road')             #Name of the game
 clock=pygame.time.Clock()                                          #for all the intervals in game
-carimg=pygame.image.load("car2.png")
-backgroundpic=pygame.image.load("left.png")
-backgroundpic1=pygame.image.load("right.png")
-white_strip=pygame.image.load("whitestrip.jpg")
-strip=pygame.image.load("strip.jpg")
-intro_bg=pygame.image.load("dp.jpg")
-instruct_bg=pygame.image.load("back.jpg")
+carimg=pygame.image.load("resorce_car_racing\\car2.png")
+backgroundpic=pygame.image.load("resorce_car_racing\\left.png")
+backgroundpic1=pygame.image.load("resorce_car_racing\\right.png")
+white_strip=pygame.image.load("resorce_car_racing\\whitestrip.jpg")
+strip=pygame.image.load("resorce_car_racing\\strip.jpg")
+intro_bg=pygame.image.load("resorce_car_racing\\dp.jpg")
+instruct_bg=pygame.image.load("resorce_car_racing\\back.jpg")
 car_width = 50
 pause=True
 
@@ -211,11 +211,11 @@ def countdown():
 def obstacle(obs_startx,obs_starty,obs):
     global obs_pic
     if obs==0:
-        obs_pic=pygame.image.load("car1.png")
+        obs_pic=pygame.image.load("resorce_car_racing\\car1.png")
     elif obs==1:
-        obs_pic=pygame.image.load("car.png")
+        obs_pic=pygame.image.load("resorce_car_racing\\car.png")
     elif obs==2:
-        obs_pic=pygame.image.load("car2.png") 
+        obs_pic=pygame.image.load("resorce_car_racing\\car2.png") 
     gamedisplays.blit(obs_pic,(obs_startx,obs_starty))
 
 def score_Sys(passed,score):
